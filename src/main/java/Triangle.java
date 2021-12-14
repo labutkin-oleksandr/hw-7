@@ -1,8 +1,7 @@
 public class Triangle extends Shape {
-   static final String shapeName = "Triangle";
-   private int sideA;
-   private int sideB;
-   private int sideC;
+    private int sideA;
+    private int sideB;
+    private int sideC;
 
     public Triangle(int sideA, int sideB, int sideC) {
         this.sideA = sideA;
@@ -10,8 +9,8 @@ public class Triangle extends Shape {
         this.sideC = sideC;
     }
 
-    public void getName() {
-        this.printName(shapeName);
+    public String  getName() {
+        return "Triangle";
     }
 
     public int getArea() {

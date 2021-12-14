@@ -1,9 +1,13 @@
 public abstract class Shape {
-    public void printName(String shapeName) {
-        ShapeName name = new ShapeName(shapeName);
+    public void printName() {
+        ShapeName name = new ShapeName(this);
         name.printName();
     }
 
-    public abstract void getName();
+    public void printShapeName(Shape shape) {
+        System.out.println(shape.getName());
+    }
+
+    public abstract String getName();
     public abstract int getArea();
 }

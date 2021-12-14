@@ -1,5 +1,4 @@
 public class Circle extends Shape implements ColorFigure {
-    static final String shapeName = "Circle";
     private int radius;
     private String color = "No color";
 
@@ -23,16 +22,12 @@ public class Circle extends Shape implements ColorFigure {
         return (int) Math.PI * (getRadius() * getRadius());
     }
 
-    public void getName() {
-        this.printName(getShapeName());
-    }
-
     public int getRadius() {
         return radius;
     }
 
-    public String getShapeName() {
-        return shapeName;
+    public String getName() {
+        return "Circle";
     }
 
 }

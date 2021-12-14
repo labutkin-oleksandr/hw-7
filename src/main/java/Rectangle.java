@@ -1,5 +1,4 @@
 public class Rectangle extends Shape  {
-    static final String shapeName = "Rectangle";
     private int sideA;
     private int sideB;
 
@@ -8,8 +7,8 @@ public class Rectangle extends Shape  {
         this.sideB = sideB;
     }
 
-    public void getName() {
-        this.printName(getShapeName());
+    public String getName() {
+        return "Rectangle";
     }
 
     public int getArea() {
@@ -22,9 +21,5 @@ public class Rectangle extends Shape  {
 
     public int getSideB() {
         return sideB;
-    }
-
-    public String getShapeName() {
-        return shapeName;
     }
 }

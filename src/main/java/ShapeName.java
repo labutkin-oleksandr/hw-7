@@ -1,14 +1,11 @@
 class ShapeName {
-    private String shapeName;
+    private Shape shape;
 
-    public ShapeName(String shapeName) {
-        this.shapeName = shapeName;
+    public ShapeName(Shape shape) {
+        this.shape = shape;
     }
 
-    public String getShapeName() {
-        return this.shapeName;
-    }
     public void printName() {
-        System.out.println("Shape name is " + getShapeName());
+        System.out.println("Shape name is " + shape.getName());
     }
 }

@@ -1,5 +1,4 @@
 public class Quad extends Shape implements ColorFigure {
-    static final String shapeName = "Quad";
     private int side;
     private String color = "red";
 
@@ -23,15 +22,11 @@ public class Quad extends Shape implements ColorFigure {
         return (int) Math.pow(getSide(),2);
     }
 
-    public void getName() {
-        this.printName(getShapeName());
+    public String getName() {
+        return "Quad";
     }
 
     public int getSide() {
         return side;
-    }
-
-    public String getShapeName() {
-        return shapeName;
     }
 }
