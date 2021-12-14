@@ -1,7 +1,7 @@
-class ShapeName {
+class NameShapePrinter {
     private Shape shape;
 
-    public ShapeName(Shape shape) {
+    public NameShapePrinter(Shape shape) {
         this.shape = shape;
     }
 

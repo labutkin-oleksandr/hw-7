@@ -1,6 +1,6 @@
 public abstract class Shape {
     public void printName() {
-        ShapeName name = new ShapeName(this);
+        NameShapePrinter name = new NameShapePrinter(this);
         name.printName();
     }
 

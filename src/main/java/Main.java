@@ -14,6 +14,8 @@ public class Main {
         quad.replaceColor("orange");
         quad.printColor();
         System.out.println(quad.getArea());
-        quad.printName();
+
+        NameShapePrinter shapeName = new NameShapePrinter(new Quad(1));
+        shapeName.printName();
     }
 }
